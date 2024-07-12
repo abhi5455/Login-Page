@@ -117,7 +117,7 @@ toggleButton3.addEventListener("click", function(){
     }
 })
 
-window.addEventListener("resize", function(){
+window.addEventListener('resize', function(){
     if(submitButton.textContent === "SIGN UP"){
         setSignUp();
     }
