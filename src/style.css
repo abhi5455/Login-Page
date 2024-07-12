@@ -220,5 +220,23 @@ form button:hover{
 @media (max-width:600px){
     form{
         width: 65%;
+        h1{
+            font-size: 33px;
+        }
+    }
+    input{
+        font-size: 14px;
+    }
+}
+@media (max-width:500px){
+    body{
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    form{
+        width: 75%;
+        h1{
+            font-size: 33px;
+        }
     }
 }

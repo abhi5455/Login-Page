@@ -3,6 +3,7 @@ let toggleButton3 = document.getElementById("toggleButton3");
 let submitButton = document.getElementById("submitButton");
 let section=document.getElementById("section");
 let userInput=document.getElementById("userInput");
+let userInteractedFlag=false;
 
 //GoogleIcon
 let GBox=document.getElementById("GBox");
@@ -40,6 +41,7 @@ toggleButton.addEventListener("click", function (){
 
 function setSignIn(){
     toggleFlag = true;
+    userInteractedFlag=true;
     h1.textContent = "Hello, Friend !";
     toggleButton.textContent = "SIGN UP";
     submitButton.textContent = "SIGN IN";
@@ -73,6 +75,7 @@ function setSignIn(){
 
 function setSignUp(){
     toggleFlag=false;
+    userInteractedFlag=true;
     h1.textContent = "Welcome Back !";
     toggleButton.textContent = "SIGN IN";
     submitButton.textContent = "SIGN UP";
@@ -118,11 +121,12 @@ toggleButton3.addEventListener("click", function(){
 })
 
 window.addEventListener('resize', function(){
-    if(submitButton.textContent === "SIGN UP"){
-        setSignUp();
-    }
-    else{
-        setSignIn();
+    if(userInteractedFlag===true) {
+        if (submitButton.textContent === "SIGN UP") {
+            setSignUp();
+        } else {
+            setSignIn();
+        }
     }
 })
 
