@@ -1,0 +1,56 @@
+
+.icons{
+    position: relative;
+    left: calc(50% - 110px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 220px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.eachIconDiv{
+    outline: 1px solid lightgrey;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    transform: translateY(15%);
+    transition: transform .2s ease-in-out, background-color .2s linear;
+}
+.eachIconDiv:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#fbBox:hover{
+    background-color: rgb(66, 103, 178);
+    #fb{
+        fill: white;
+    }
+}
+#GBox:hover{
+    transform: scale(1.1);
+    transition: transform 150ms ease-in-out, background-color .2s linear;
+}
+#gitBox:hover{
+    background-color: black;
+    #git{
+        fill: white;
+    }
+}
+#linkedInBox:hover{
+    background-color: rgb(10, 102, 194);
+    #linkedIn{
+        fill: white;
+    }
+}
+@media(max-width: 900px){
+    #fb{
+        fill: darkblue;
+    }
+    #linkedIn{
+        fill: #512da8;
+    }
+}
