@@ -134,6 +134,13 @@ input{
     padding-left: 10px;
     font-family: Montserrat, sans-serif;
     user-select: text;
+    caret-color: dimgrey;
+}
+#passwordField{
+    border-radius: 10px 0 0 10px;
+}
+#password label{
+    border-radius: 0 10px 10px 0;
 }
 .input::placeholder{
     font-size: 5px;
@@ -150,12 +157,32 @@ form button:hover{
     cursor: pointer;
     color: red;
 }
+#passwordField::placeholder{
+    font-size: 15px;
+}
+#eyeOpen{
+    display: none;
+}
+#eyeOpen:hover, #eyeClose:hover{
+    cursor: pointer;
+}
+
+input[type="password"]::-webkit-textfield-decoration-container {
+    display: none;
+}
+/* Hide the eye icon in password fields for Edge */
+input[type="password"]::-ms-reveal {
+    display: none;
+}
 @media (min-width:1400px) {
     form{
         gap: 15px;
     }
     input{
         margin-top: -3px;
+    }
+    #passwordField{
+        margin-top: 0;
     }
 }
 @media (min-width: 900px) and (max-width:1300px) {
