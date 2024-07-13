@@ -128,6 +128,14 @@ window.addEventListener('resize', function(){
             setSignIn();
         }
     }
+    else {
+        if(window.matchMedia('(max-width: 900px)').matches){
+            h1.textContent = "Hello, Friend !";
+        }
+        else {
+            h1.textContent = "Welcome Back !";
+        }
+    }
 })
 
 window.addEventListener("load", function(){
