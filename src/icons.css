@@ -48,9 +48,9 @@
 }
 @media(max-width: 900px){
     #fb{
-        fill: darkblue;
+        fill: rgb(66, 103, 178);
     }
     #linkedIn{
-        fill: #512da8;
+        fill: rgb(10, 102, 194);
     }
 }
