@@ -81,7 +81,6 @@ body{
     border: none;
     background-color: transparent;
     color: #512da8;
-    transform: translate(0,0);
     z-index: 20;
     display: none;
 }
@@ -95,6 +94,19 @@ body{
 #toggleButton:hover, #toggleButton2:hover{
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgba(255,255,255,.3);
+}
+#logo{
+    position: fixed;
+    top: 7px;
+    left: 25px;
+    border: none;
+    background-color: transparent;
+    color: #512da8;
+    z-index: 20;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: .5;
+    display: none;
 }
 form{
     /*outline: 2px solid red;/**/

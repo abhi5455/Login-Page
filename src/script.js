@@ -52,6 +52,7 @@ function setSignIn(){
     email.style.marginTop = "-20px";
     submitButton.style.marginTop = "-8px";
     if(window.matchMedia('(max-width: 900px)').matches){
+        logo.style.display = "block";
         toggleButton3.style.display = "block";
         userInput.style.transform = "translateX(0%)";
         userInput.style.borderRadius="0 0 0 0";
@@ -61,6 +62,7 @@ function setSignIn(){
     }
     else {
         toggleButton3.style.display = "none";
+        logo.style.display = "none";
         section.style.transform = "translateX(100%)";
         userInput.style.transform = "translateX(-100%)";
         section.style.borderRadius = "260px 0 0 150px";
@@ -87,6 +89,7 @@ function setSignUp(){
     submitButton.style.marginTop = "15px";
     if(window.matchMedia('(max-width: 900px)').matches){
         toggleButton3.style.display = "block";
+        logo.style.display = "block";
         userInput.style.transform = "translateX(0%)";
         userInput.style.borderRadius="0 0 0 0";
         section.style.transform = "translateX(-100%)";
@@ -95,6 +98,7 @@ function setSignUp(){
     }
     else {
         toggleButton3.style.display = "none";
+        logo.style.display = "none";
         section.style.transform = "translateX(0)";
         userInput.style.transform = "translateX(0)";
         section.style.borderRadius = "0 260px 150px 0";
@@ -106,6 +110,7 @@ function setSignUp(){
     }
 }
 
+let logo=document.getElementById('logo');
 let toggleButton2=document.getElementById("toggleButton2");
 toggleButton2.addEventListener("click", function(){
     setSignUp();
@@ -155,4 +160,3 @@ function setGoogleIcon(){
         document.getElementById('G').src="../Images/google.png"
     }
 }
-
