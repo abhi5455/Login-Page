@@ -8,12 +8,12 @@ let userInteractedFlag=false;
 //GoogleIcon
 let GBox=document.getElementById("GBox");
 GBox.addEventListener("mouseenter", function(){
-    document.getElementById('G').src="../Images/googleHover.png"
+    document.getElementById('G').src="Images/googleHover.png"
     document.getElementById('G').style.height="17px";
     document.getElementById('G').style.width="17px";
 });
 GBox.addEventListener("mouseleave", function(){
-    document.getElementById('G').src="../Images/google.png"
+    document.getElementById('G').src="Images/google.png"
     document.getElementById('G').style.height="15px";
     document.getElementById('G').style.width="15px";
 });
@@ -154,9 +154,9 @@ window.addEventListener("resize", setGoogleIcon);
 document.getElementById('GBox').addEventListener('mouseleave', function(){ setGoogleIcon(); })
 function setGoogleIcon(){
     if(window.matchMedia('(max-width: 900px)').matches){
-        document.getElementById('G').src="../Images/googleHover.png"
+        document.getElementById('G').src="Images/googleHover.png"
     }
     else{
-        document.getElementById('G').src="../Images/google.png"
+        document.getElementById('G').src="Images/google.png"
     }
 }
